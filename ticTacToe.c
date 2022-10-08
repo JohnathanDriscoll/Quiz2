@@ -132,7 +132,7 @@ void drawBoard() {
 void resetBoard(){
     for(int i = 0; i < 3; i++)
     {
-        for(int j = 0; j < 3; j++);
+        for(int j = 0; j < 3; j++)
         {
             pos[i][j] = ' ';
         }
@@ -182,9 +182,9 @@ int checkSpace(){
 
     for(int i = 0; i < 3; i++)
     {
-        for(int j = 0; j < 3; j++);
+        for(int j = 0; j < 3; j++)
         {
-           if( pos[i][j] =! ' ')
+           if(pos[i][j] =! ' ')
            {
                 movesLeft--;
            }
