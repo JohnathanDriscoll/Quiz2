@@ -3,29 +3,42 @@
 #include <stdlib.h>
 
 
-//declarations
+//declaration
 
-char position[10];
-void board();
+char position[3][3];
+const char PLAYER1 = 'X';
+const char PLAYER2 = 'O';
+const char COMP = 'O';
+
+void drawBoard();
+void resetBoard();
 int winCheck();
-int top = 1;
-int middle = 2;
-int bottom = 3;
-int left = 1;
-int right = 3;
+
 
 
 
 
 int main() {
 
+    int move;
+
     //Prompt user for game mode
-void board();
-    //
+
+    //Display the board
+    board();
+
+
+    //Ask for player move
+
+    pritnf("You are X, what is your move?\n");
+    printf("First select a column, left (1), middle (2), or right (3).\n");
+    scanf("%d", &move);
+    position[move] = {"X"};
+    board();
 
     //Create tic tac toe board using print strings
 
-    
+
     //Read info from console
 
     //Get player input and check for win loop 
@@ -39,11 +52,11 @@ void board();
 
 void board() {
 
-    printf("+-----------+");
-    printf("|   |   |   |");
-    printf("+-----------+");
-    printf("|   |   |   |");
-    printf("+-----------+");
-    printf("|   |   |   |");
-    printf("+-----------+");
+    printf("+-----------+\n");
+    printf("| %c | %c | %c |\n", position[0], position[1], position[2]);
+    printf("+-----------+\n");
+    printf("| %c | %c | %c |\n", position[3], position[4], position[5]);
+    printf("+-----------+\n");
+    printf("| %c | %c | %c |\n", position[6], position[7], position[8]);
+    printf("+-----------+\n");
     }
